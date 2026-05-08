@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.library'
+    id 'com.google.devtools.ksp'
+}
+
+android {
+    namespace 'com.android.launcher3.concurrent'
+    compileSdk 36
+
+    defaultConfig {
+        minSdk 31
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            kotlin.srcDirs = ['src']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+kotlin {
+    compilerOptions {
+        freeCompilerArgs.add('-Xjvm-default=all')
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.9.0'
+    implementation 'com.google.dagger:dagger:2.59'
+    implementation 'com.google.guava:guava:33.5.0-android'
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2'
+
+    ksp 'com.google.dagger:dagger-compiler:2.59'
+}

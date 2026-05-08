@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="system_error_dim_light">#67040D</color>
+    <color name="system_palette_key_color_error_light">#C84F4C</color>
+    <color name="system_primary_dim_light">#40527E</color>
+    <color name="system_secondary_dim_light">#4C5366</color>
+    <color name="system_tertiary_dim_light">#5E4B73</color>
+    <color name="system_error_dim_dark">#C54D4A</color>
+    <color name="system_palette_key_color_error_dark">#C84F4C</color>
+    <color name="system_primary_dim_dark">#ABB8E0</color>
+    <color name="system_secondary_dim_dark">#B2B8CE</color>
+    <color name="system_tertiary_dim_dark">#E1C8F8</color>
+</resources>
